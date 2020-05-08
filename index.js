@@ -5,11 +5,11 @@ const countTeams = (rating) => {
             let isDown = true
             let temp = data[0]
             for (let j = 1; j < 3; j++) {
-                if (data[j] > temp) {
+                if (data[j] >= temp) {
                     isDown = false
                 }
 
-                if (data[j] < temp) {
+                if (data[j] <= temp) {
                     isUp = false
                 }
                 temp = data[j]
